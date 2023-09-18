@@ -32,6 +32,7 @@ html, body {
 
 }
 
+
 .btn-black {
     background-color: #191919;
     border: 1px solid #191919;
@@ -41,6 +42,7 @@ html, body {
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
+    text-align: center;
 
     i {
         margin-left: 8px;
@@ -48,10 +50,15 @@ html, body {
     }
 
     &:hover {
-        background-color: #F0EFE9;
+        background-color: #FFFFFF;
         border: 1px solid #191919;
         color: #191919;
 
+    }
+
+    @media(max-width: 768px){
+        display: block;
+        width: 100%;
     }
 
 }
@@ -89,10 +96,13 @@ html, body {
 .section-title{
     padding-top: 60px;
     padding-bottom: 30px;
+    text-align: center;
+
 
     @media(min-width: 768px){
         padding-top: 120px;
         padding-bottom: 90px;
+        text-align: start;
     }
     p{
         
@@ -366,23 +376,231 @@ header{
     }
 }
 
-.parent{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-  
-    .box{
-        background-color: #F9D783;
-        padding: 20px;
-        border: 1px solid black;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } 
-    
+.features{
 
+    padding-top: 20px;
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        border: 1px solid #1919196d;
+        padding: 0px 50px;
+        padding-bottom: 50px;
+        justify-content: center;
+
+        @media(min-width: 768px){
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-bottom: 30px;
+
+        }
+       
+
+        .section-title {
+
+            
+            justify-content: center;
+            align-items: center;
+
+            a{
+                margin-top: 30px;
+                display: blocK;
+                text-align: center;
+                
+            }
+
+            @media(min-width: 768px){
+                display: grid;
+                justify-content: left;
+                padding-bottom: 80px;
+                padding-right: 100px;
+
+
+            }
+            
+
+        }
+
+        .business-advice{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 60px;
+            padding-left: 20px;
+            
+            
+
+            .card{
+                border: none;
+                padding-top: 30px;
+                padding-right: 10px;
+
+                i{
+                    font-size: 22px;
+                    padding-bottom: 25px;
+                }
+
+                h3{
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                }
+
+                p{
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #191919;
+                }
+
+            }
+        }
+
+    }
 }
+
+.about-comp{
+
+    padding-top: 50px;
+    padding-bottom: 0px;
+
+    @media (min-width: 768px){
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+    }
+
+
+    .container{
+
+        display: flex;
+        position: relative;
+        padding: 0px 70px;
+
+        
+
+
+        .about-comp-image{
+
+            img{
+                height: 550px;
+
+                @media (max-width: 1200px){
+                    display: none;
+
+                }
+            }
+           
+
+            .img-text{
+
+                @media (min-width: 1200px){
+                    position: absolute;
+                    width: 350px;
+                    padding: 25px 25px;
+                    background-color: #BEEBFF;
+                    bottom: 40px;
+                    left: 25px;
+                    box-shadow: -3px 0px 7px 0px #19191963;
+
+                }
+
+                @media (max-width: 1200px){
+                    display: none;
+
+                }
+
+                h3{
+                    font-family:'DM Sans', sans-serif;
+                    font-size: 22px;
+
+                    span{
+
+                        font-size: 16px;
+                        color: #f94d1c
+                    }
+                }
+
+                p{
+                    padding-top: 10px;
+                    font-size: 16px;
+                }         
+            }
+        }
+
+        .about-comp-text{
+
+            padding-left: 110px;
+            max-width: 100%;
+
+            @media (max-width: 992px){
+                text-align: center;
+                padding-left: 0px;
+
+            }
+
+            h3 {
+                font-size: 18px;
+                color: #f94d1c;
+            }
+
+            h1 {
+                padding-top: 20px;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 45px;
+                font-weight: 700;
+            }
+
+            p {
+                padding-top: 20px;
+                color: #868686;
+                font-size: 16px;
+
+            }
+
+            
+
+            .about-comp-btns{
+
+                padding-top: 30px;
+
+                .btn-play{
+
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border: 1px solid #191919;
+                    background-color: #ffffff;
+                    margin-left: 30px;
+                    margin-right: 10px;
+
+                    i {
+                        font-size: 14px;
+                    }
+
+                    &:hover {
+                        background-color: #191919;
+                        border: 1px solid #191919;
+                        color: #F0EFE9;
+                    }
+
+                    @media(max-width: 768px){
+                        display: none;
+                    }
+                }
+
+                span{
+                    font-size: 16px;
+                    font-weight: 700;
+
+                    @media(max-width: 768px){
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 .project-and-case{
 
@@ -447,6 +665,12 @@ header{
             }
         } 
 
+        .btn-business{
+            padding-left: 30px;
+            padding-right: 30px;
+
+        }
+
         .center-content{
             padding-top: 50px;
             padding-bottom: 90px;
@@ -454,3 +678,4 @@ header{
         } 
     }
 }
+
