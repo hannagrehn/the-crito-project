@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap');
 
+
+
 html, body {
     color: #191919;
     font-family: 'Inter', sans-serif;
@@ -31,7 +33,6 @@ html, body {
     }
 
 }
-
 
 .btn-black {
     background-color: #191919;
@@ -80,10 +81,27 @@ html, body {
 
     &:hover {
         background-color: #191919;
-        border: 1px solid #191919;
+        border: 2px solid #191919;
         color: #F0EFE9;
 
     }
+
+    @media(max-width: 768px){
+        display: block;
+        width: 100%;
+    }
+
+}
+
+.btn-arrow{
+    
+    background-color: #191919;
+    border-radius: 50%;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 180px;
+    border: none;
 
 }
 
@@ -378,13 +396,14 @@ header{
 
 .features{
 
-    padding-top: 20px;
+    
+    margin-top: -80px;
 
     .container{
         display: grid;
         grid-template-columns: 1fr;
         border: 1px solid #1919196d;
-        padding: 0px 50px;
+        padding: 0px 0px;
         padding-bottom: 50px;
         justify-content: center;
 
@@ -392,7 +411,10 @@ header{
             display: grid;
             grid-template-columns: 1fr 1fr;
             padding-bottom: 30px;
+        }
 
+        @media(max-width: 992px){
+            border: none;
         }
        
 
@@ -426,6 +448,10 @@ header{
             grid-template-columns: 1fr 1fr;
             padding-top: 60px;
             padding-left: 20px;
+
+            @media(max-width: 576px){
+                grid-template-columns: 1fr;
+            }
             
             
 
@@ -461,7 +487,7 @@ header{
 .about-comp{
 
     padding-top: 50px;
-    padding-bottom: 0px;
+    padding-bottom: 70px;
 
     @media (min-width: 768px){
         padding-top: 120px;
@@ -469,15 +495,11 @@ header{
 
     }
 
-
     .container{
 
         display: flex;
         position: relative;
-        padding: 0px 70px;
-
         
-
 
         .about-comp-image{
 
@@ -601,6 +623,196 @@ header{
     }
 }
 
+.our-services{
+    background-color: #DAD9D3;
+
+    .container{
+
+        padding-top: 0px;
+        padding-bottom: 100px;
+
+        h3{
+            font-family:'DM Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 800;
+            color: #191919;
+            margin-bottom: 20px;
+        }
+
+
+        .service-carusell {
+            display: grid;
+            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+
+
+            
+
+            .service-card{
+
+                background-color: #ffffff;
+                padding: 40px 25px;
+                margin-bottom: 40px;
+
+                @media(max-width: 768px){
+
+                }
+
+                
+
+                &:hover{
+
+                    background-color: #F9D783;
+                    
+                    .btn-arrow {
+                        background-color: white;
+                        border: none;
+                        
+
+                        i {
+                            color: #191919;
+                        }
+                    }
+                }
+
+                span{
+                    display: block;
+                    border: 1px solid black;
+                    width: 40px;
+                    margin-bottom: 50px;
+                }
+
+                h3{
+                    font-size: 22px;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 900;
+                    margin-bottom: 15px;
+
+                }
+
+                p{
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-bottom: 50px;
+                }
+
+                i{
+                    color: #ffffff;
+                    font-size: 25px;
+                }
+
+                
+            }
+        }
+
+        .btn-browse{
+            text-align: center;
+            
+            .btn-transparent{
+                padding: 16px 40px;
+
+            }
+
+            @media(max-width: 768px){
+                display: block;
+                width: 100%;
+
+            }
+        }
+    }
+}
+
+.why-choose-us{
+    position: relative;
+    padding-top: 60px;
+
+
+   
+    .container{
+
+    
+        .choose-us-grid{
+
+             img{
+               
+                height: 450px;
+                width: auto;
+                margin-top: 150px;
+
+                @media(max-width: 1400px){
+                    display: none;
+
+                }
+             }
+
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 200px;
+
+            @media(max-width: 1200px){
+                grid-template-columns: 1fr;
+                margin-bottom: -200px;
+
+                }
+            
+            }
+
+            .choose-us-content {
+
+                .section-title{
+                    @media(max-width: 992px){
+                        justify-content: center;
+
+                    }
+                }
+
+                @media(max-width: 1400){
+                    justify-content: center;
+                    text-align: center;
+
+                }
+
+                padding-top: 0px;
+
+                .choose-us-offers{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 40px;
+                    
+
+                    i{
+                        padding: 15px;
+                        border: 1px solid #DAD9D3;
+                        border-radius: 50px;
+                        font-size: 22px;
+                        margin-right: 20px;
+                    }
+
+                    span{
+
+
+                        h4 {
+                            font-size: 22px;
+                            font-family: 'DM Sans', sans-serif;
+                            font-weight: 700;
+                            
+                            
+                        }
+    
+                        p {
+                            margin: 0;
+                            color: #868686;
+                            font-weight: 400;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+}
+
 
 .project-and-case{
 
@@ -678,4 +890,5 @@ header{
         } 
     }
 }
+
 
