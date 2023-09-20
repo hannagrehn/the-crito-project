@@ -413,6 +413,12 @@ header{
             padding-bottom: 30px;
         }
 
+        @media(min-width: 992px){
+            margin-top: 100px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
         @media(max-width: 992px){
             border: none;
         }
@@ -646,20 +652,12 @@ header{
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 30px;
 
-
-            
-
             .service-card{
 
                 background-color: #ffffff;
                 padding: 40px 25px;
                 margin-bottom: 40px;
 
-                @media(max-width: 768px){
-
-                }
-
-                
 
                 &:hover{
 
@@ -674,6 +672,37 @@ header{
                             color: #191919;
                         }
                     }
+                }
+
+                &:active{
+
+                    background-color: #F9D783;
+                    
+                    .btn-arrow {
+                        background-color: white;
+                        border: none;
+                        
+
+                        i {
+                            color: #191919;
+                        }
+                    }
+
+                }
+
+                .active{
+                    background-color: #F9D783;
+                    
+                    .btn-arrow{
+                        background-color: white;
+                        border: none;
+                        
+
+                        i {
+                            color: #191919;
+                        }
+                    }
+
                 }
 
                 span{
@@ -717,6 +746,8 @@ header{
             @media(max-width: 768px){
                 display: block;
                 width: 100%;
+                margin-top: 25px;
+                margin-bottom: -30px;
 
             }
         }
@@ -813,7 +844,6 @@ header{
         }
 }
 
-
 .project-and-case{
 
     .article-img{
@@ -891,4 +921,219 @@ header{
     }
 }
 
+.meet-our-team{
 
+    
+    background-color: #F9D783;
+
+    .container{
+
+        .meet-our-team-header{
+
+            .top-title{
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 80px;
+
+                @media(max-width: 768px){
+                    display: block;
+                    margin-bottom: 80px;
+                }
+
+                .btn-transparent{
+
+                    @media(max-width:768px){
+                        margin-top: 40px;
+                        margin-bottom: -30px;
+                        
+                    }
+                }
+   
+            }
+
+            .section-title{
+                padding: 10px;
+            }
+
+            .little-title{
+                padding-top: 80px;
+            }
+
+        }
+
+        .meet-our-team-grid{
+
+            padding-bottom: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            place-items: center;
+
+            @media(max-width: 1200px){
+                grid-template-columns: 1fr 1fr;
+                justify-content: center;
+                align-items: center;
+            }
+
+            @media(max-width: 768px){
+                grid-template-columns: 1fr;
+                align-items: center;
+            }
+
+            .meet-our-team-card{
+
+                img {
+                    margin-top: 0px;
+                    margin-bottom: 20px;
+                    height: 350px;
+                    width: 255px;
+
+                }
+
+                h4{
+                    font-family:'DM Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+
+                p{
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #6c6c6c;
+                }
+            }
+        }
+
+        .dots{
+            display: flex; 
+            justify-content: center;
+            
+
+            .dot{
+                height: 12px;
+                width: 12px;
+                background-color: #8d8d8d8d;
+                border: none;
+                border-radius: 50%; 
+                padding: 7px;
+                margin: 8px;   
+                
+                &:hover{
+                    background-color: #191919;
+                }
+
+                &:active{
+                    background-color: #191919;
+                }
+            }
+
+            .active{
+                background-color: #191919;
+
+            }
+        }
+    }
+}
+
+
+.testimonial{
+
+    background-color: #F9D783;
+    padding-top: 60px;
+    padding-bottom: 90px;
+
+    .container{
+        background-color: #FFFFFF;
+        padding-top: 10px;
+        padding-bottom: 90px;
+
+        .section-title{
+
+            text-align: center;
+            margin-bottom: -80px;
+            margin-top: -50px;
+
+            @media(max-width: 768px){
+                margin-bottom: 0px;
+                margin-top: 15px;
+            }
+
+        }
+
+        .testimonial-grid{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 60px;
+
+            @media(max-width: 992px){
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media(max-width: 768px){
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-card{
+
+                padding: 50px;
+
+                @media(max-width: 768px){
+                    padding: 10px;
+                    margin-bottom: 40px;
+                }
+
+                .stars{
+                    margin-bottom: 15px;
+
+                    i{
+                        color: #f94d1c;    
+                    }
+                }
+
+                p{
+                    margin-bottom: 40px;
+                }
+
+                .review-person{
+                    display: flex;
+                    align-items: center;
+
+                    .circular-portrait{ 
+                        margin-right: 20px;
+                        position: relative; 
+                        width: 50px; 
+                        height: 50px; 
+                        overflow: hidden; 
+                        border-radius: 50%;
+                    }
+                       
+
+                    .review-person-details{
+
+                        h3{
+                            margin: 0;
+                            font-family: 'DM Sans', sans-serif;
+                            font-size: 22px;
+                            font-weight: 800px;
+                        }
+
+                        p{
+                            margin: 0;
+                            font-size: 16px;
+                            font-weight: 400;
+                            color: #f94d1c;
+                        }
+                    }
+                }
+            }
+        }
+
+        .all-reviews-btn{
+            text-align: center;
+            margin-top: -30px;
+        }
+    }
+}
