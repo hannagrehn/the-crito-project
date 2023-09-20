@@ -1137,3 +1137,285 @@ header{
         }
     }
 }
+
+
+.article-and-news {
+
+    padding-top: 100px;
+    margin-bottom: 80px;
+
+
+    .container {
+
+        h3{
+            font-size: 45px;
+            font-weight: 700;
+            font-family: 'DM Sans', sans-serif;
+            margin-bottom: 40px;
+        }
+
+
+        .article-news-header{
+
+            .top-title{
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 80px;
+
+                @media(max-width: 768px){
+                    display: block;
+                    margin-bottom: 80px;
+                }
+
+                .btn-transparent{
+
+                    @media(max-width:768px){
+                        margin-top: 40px;
+                        margin-bottom: -30px;
+                        
+                    }
+                }
+   
+            }
+
+            .section-title{
+                padding: 10px;
+            }
+
+            .little-title{
+                padding-top: 10px;
+            }
+
+        }
+
+        .article-and-news-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            place-items: center;
+            gap: 10px;
+
+            @media(max-width: 1200px){
+                grid-template-columns: 1fr 1fr;
+                justify-content: center;
+                align-items: center;
+            }
+
+            @media(max-width: 768px){
+                grid-template-columns: 1fr;
+                align-items: center;
+                margin-bottom: 40px;
+            }
+
+            .article-and-news-card{
+                
+                
+                
+                img{
+                    height: 250px;
+                    width: auto;
+                    margin-bottom: 20px;
+                    
+                    
+                }
+
+                h3{
+                    font-size: 26px;
+                    font-weight: 500;
+                    color: #6c6c6c;
+                    margin-bottom: 20px;
+                    text-decoration: none;
+                    
+                }
+
+                h2{
+                    font-family:'DM Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 800;
+                    margin-bottom: 10px;
+                    text-decoration: none;
+                }
+
+                p{
+                    font-size: 16px;
+                    color: #6c6c6c;
+                    font-weight: 500;
+                    
+                }
+
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+
+        
+
+        .dots{
+            display: flex; 
+            justify-content: center;
+            
+
+            .dot{
+                height: 12px;
+                width: 12px;
+                background-color: #8d8d8d8d;
+                border: none;
+                border-radius: 50%; 
+                padding: 7px;
+                margin: 8px;   
+                
+                &:hover{
+                    background-color: #191919;
+                }
+
+                &:active{
+                    background-color: #191919;
+                }
+            }
+
+            .active{
+                background-color: #191919;
+
+            }
+        }
+    }
+}
+
+.news-signup{
+
+    background-color: #DAD9D3;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    margin-top: 70px;
+
+    .container{
+
+        div{
+            display: flex;
+            align-items: center;
+
+            h2{
+                font-size: 45px;
+                font-weight: 600;
+                font-family: 'DM Sans', sans-serif;
+                margin-right: 150px;
+            }
+
+            input{
+
+                border: none;
+                padding: 10px 30px;
+                border-radius: 20px;
+                margin-right: 20px;
+                outline: none;
+
+            }
+        }
+    }
+}
+
+.footer{
+
+    background-color: #0E1021;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    border-bottom: 1px solid #7070706b;
+
+    .container{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .footer-logo{
+
+            width: 30%;
+
+            img {
+                margin-bottom: 20px;
+            }
+
+            p {
+
+                font-size: 16px;
+                font-weight: 500;
+                color: #6c6c6c;
+            }
+        }
+
+        .footer-column{
+
+            color: #ffffff;
+            
+
+            ul{
+                list-style-type: none;
+                padding: 0px;
+
+                li{
+                    margin-bottom: 20px;
+                    color: #6c6c6c;
+                    font-size: 16px;
+                    font-weight: 500;
+
+                    a{
+                        color: #6c6c6c;
+                        text-decoration: none;
+                    
+
+                        &:hover {
+                            color: #DAD9D3;
+                        }
+                    }
+                }
+            }
+
+            h4 {
+                font-size: 22px;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 800;
+                margin-bottom: 50px;
+                
+            }
+        }
+    }
+}
+
+.footer-copyright{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #0E1021;
+
+    .container{ 
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .copyright{
+
+            color: #8F9098;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .social-media{
+
+            a{
+                margin: 0px 10px;
+
+                i {
+                    color: #8F9098;
+
+                    &:hover{
+                        color: #F0EFE9;
+                    }
+                }
+            }
+        }
+    }
+}
+
