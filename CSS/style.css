@@ -908,7 +908,7 @@ header .container .main-menu .btn-login {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
 }
 @media (max-width: 768px) {
   .article-and-news .container .article-news-header .top-title {
@@ -933,51 +933,53 @@ header .container .main-menu .btn-login {
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
   gap: 10px;
+  justify-content: center;
+}
+.article-and-news .container .article-and-news-grid a {
+  text-decoration: none;
 }
 @media (max-width: 1200px) {
   .article-and-news .container .article-and-news-grid {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
+    place-items: center;
   }
 }
 @media (max-width: 768px) {
   .article-and-news .container .article-and-news-grid {
     grid-template-columns: 1fr;
-    align-items: center;
     margin-bottom: 40px;
+    place-items: center;
   }
 }
 .article-and-news .container .article-and-news-grid .article-and-news-card img {
   height: 250px;
-  width: auto;
+  width: 350px;
   margin-bottom: 20px;
 }
 .article-and-news .container .article-and-news-grid .article-and-news-card h3 {
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 500;
   color: #6c6c6c;
   margin-bottom: 20px;
-  text-decoration: none;
 }
 .article-and-news .container .article-and-news-grid .article-and-news-card h2 {
   font-family: "DM Sans", sans-serif;
+  color: #191919;
   font-size: 22px;
-  font-weight: 800;
+  font-weight: 700;
   margin-bottom: 10px;
-  text-decoration: none;
 }
 .article-and-news .container .article-and-news-grid .article-and-news-card p {
   font-size: 16px;
   color: #6c6c6c;
   font-weight: 500;
 }
-.article-and-news .container .article-and-news-grid .article-and-news-card a {
-  text-decoration: none;
-}
 .article-and-news .container .dots {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 .article-and-news .container .dots .dot {
   height: 12px;
@@ -1000,13 +1002,17 @@ header .container .main-menu .btn-login {
 
 .news-signup {
   background-color: #DAD9D3;
-  padding-top: 110px;
-  padding-bottom: 110px;
-  margin-top: 70px;
+  padding-bottom: 10px;
+  margin-top: 10px;
 }
 .news-signup .container div {
   display: flex;
   align-items: center;
+}
+@media (max-width: 992px) {
+  .news-signup .container div {
+    display: block;
+  }
 }
 .news-signup .container div h2 {
   font-size: 45px;
@@ -1014,12 +1020,32 @@ header .container .main-menu .btn-login {
   font-family: "DM Sans", sans-serif;
   margin-right: 150px;
 }
-.news-signup .container div input {
+@media (max-width: 768px) {
+  .news-signup .container div h2 {
+    margin-right: 0px;
+  }
+}
+.news-signup .container div .input-box {
   border: none;
   padding: 10px 30px;
   border-radius: 20px;
   margin-right: 20px;
   outline: none;
+}
+@media (max-width: 768px) {
+  .news-signup .container div .input-box {
+    display: block;
+    width: 100%;
+    margin-right: 0px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .news-signup .container div .btn-yellow {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 .footer {
@@ -1027,6 +1053,11 @@ header .container .main-menu .btn-login {
   padding-top: 110px;
   padding-bottom: 110px;
   border-bottom: 1px solid rgba(112, 112, 112, 0.4196078431);
+}
+@media (max-width: 992px) {
+  .footer {
+    display: none;
+  }
 }
 .footer .container {
   display: flex;
@@ -1044,8 +1075,18 @@ header .container .main-menu .btn-login {
   font-weight: 500;
   color: #6c6c6c;
 }
+@media (max-width: 992px) {
+  .footer .container .footer-logo p {
+    display: none;
+  }
+}
 .footer .container .footer-column {
   color: #ffffff;
+}
+@media (max-width: 992px) {
+  .footer .container .footer-column {
+    display: none;
+  }
 }
 .footer .container .footer-column ul {
   list-style-type: none;
@@ -1076,6 +1117,12 @@ header .container .main-menu .btn-login {
   padding-bottom: 20px;
   background-color: #0E1021;
 }
+@media (max-width: 992px) {
+  .footer-copyright {
+    font-size: 16px;
+    justify-content: center;
+  }
+}
 .footer-copyright .container {
   display: flex;
   justify-content: space-between;
@@ -1085,6 +1132,11 @@ header .container .main-menu .btn-login {
   color: #8F9098;
   font-size: 16px;
   font-weight: 500;
+}
+@media (max-width: 992px) {
+  .footer-copyright .container .social-media {
+    display: none;
+  }
 }
 .footer-copyright .container .social-media a {
   margin: 0px 10px;
