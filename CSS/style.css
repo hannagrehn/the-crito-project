@@ -233,6 +233,19 @@ header .container .main-menu .btn-login {
 
 .showcase {
   background-color: #F0EFE9;
+  position: relative;
+  z-index: 0;
+}
+.showcase .white-lines {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+@media (max-width: 992px) {
+  .showcase .white-lines {
+    display: none;
+  }
 }
 .showcase .container {
   display: flex;
@@ -413,6 +426,12 @@ header .container .main-menu .btn-login {
     padding-bottom: 120px;
   }
 }
+@media (min-width: 1200px) {
+  .about-comp {
+    padding-top: 100px;
+    margin-bottom: -170px;
+  }
+}
 .about-comp .container {
   display: flex;
 }
@@ -521,78 +540,87 @@ header .container .main-menu .btn-login {
 }
 
 .our-services {
-  background-color: #DAD9D3;
+  background-color: #F0EFE9;
+  position: relative;
+  z-index: 0;
+}
+.our-services .white-lines {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+@media (max-width: 992px) {
+  .our-services .white-lines {
+    display: none;
+  }
 }
 .our-services .container {
   padding-top: 0px;
   padding-bottom: 100px;
 }
-.our-services .container h3 {
-  font-family: "DM Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  color: #191919;
-  margin-bottom: 20px;
+.our-services .container .section-title {
+  margin-bottom: -50px;
 }
-.our-services .container .service-carusell {
+.our-services .container .services {
   display: grid;
   margin-top: 20px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
-.our-services .container .service-carusell .service-card {
+.our-services .container .services .service-card {
   background-color: #ffffff;
   padding: 40px 25px;
   margin-bottom: 40px;
 }
-.our-services .container .service-carusell .service-card:hover {
+.our-services .container .services .service-card:hover {
   background-color: #F9D783;
 }
-.our-services .container .service-carusell .service-card:hover .btn-arrow {
+.our-services .container .services .service-card:hover .btn-arrow {
   background-color: white;
   border: none;
 }
-.our-services .container .service-carusell .service-card:hover .btn-arrow i {
+.our-services .container .services .service-card:hover .btn-arrow i {
   color: #191919;
 }
-.our-services .container .service-carusell .service-card:active {
+.our-services .container .services .service-card:active {
   background-color: #F9D783;
 }
-.our-services .container .service-carusell .service-card:active .btn-arrow {
+.our-services .container .services .service-card:active .btn-arrow {
   background-color: white;
   border: none;
 }
-.our-services .container .service-carusell .service-card:active .btn-arrow i {
+.our-services .container .services .service-card:active .btn-arrow i {
   color: #191919;
 }
-.our-services .container .service-carusell .service-card .active {
+.our-services .container .services .service-card .active {
   background-color: #F9D783;
 }
-.our-services .container .service-carusell .service-card .active .btn-arrow {
+.our-services .container .services .service-card .active .btn-arrow {
   background-color: white;
   border: none;
 }
-.our-services .container .service-carusell .service-card .active .btn-arrow i {
+.our-services .container .services .service-card .active .btn-arrow i {
   color: #191919;
 }
-.our-services .container .service-carusell .service-card span {
+.our-services .container .services .service-card span {
   display: block;
   border: 1px solid black;
   width: 40px;
   margin-bottom: 50px;
 }
-.our-services .container .service-carusell .service-card h3 {
+.our-services .container .services .service-card h3 {
   font-size: 22px;
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   margin-bottom: 15px;
 }
-.our-services .container .service-carusell .service-card p {
+.our-services .container .services .service-card p {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 50px;
 }
-.our-services .container .service-carusell .service-card i {
+.our-services .container .services .service-card i {
   color: #ffffff;
   font-size: 25px;
 }
@@ -614,6 +642,27 @@ header .container .main-menu .btn-login {
 .why-choose-us {
   position: relative;
   padding-top: 60px;
+  z-index: 0;
+}
+.why-choose-us .background-box {
+  height: 340px;
+  width: 890px;
+  background-color: #F0EFE9;
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+  margin-right: 0px;
+  z-index: -1;
+}
+@media (max-width: 1400px) {
+  .why-choose-us .background-box {
+    display: none;
+  }
+}
+@media (min-width: 1400px) {
+  .why-choose-us .container {
+    margin-bottom: -100px;
+  }
 }
 .why-choose-us .container .choose-us-grid {
   display: grid;
@@ -644,20 +693,6 @@ header .container .main-menu .btn-login {
 }
 @media (max-width: 1200px) {
   .why-choose-us .container img {
-    display: none;
-  }
-}
-.why-choose-us .container .background-box {
-  height: 340px;
-  width: 790px;
-  background-color: #DAD9D3;
-  position: relative;
-  right: 90px;
-  bottom: 240px;
-  margin-right: -300px;
-}
-@media (max-width: 1400px) {
-  .why-choose-us .container .background-box {
     display: none;
   }
 }
@@ -935,6 +970,11 @@ header .container .main-menu .btn-login {
   padding-top: 100px;
   margin-bottom: 80px;
 }
+@media (max-width: 992px) {
+  .article-and-news {
+    padding-top: 50px;
+  }
+}
 .article-and-news .container h3 {
   font-size: 45px;
   font-weight: 700;
@@ -1056,7 +1096,7 @@ header .container .main-menu .btn-login {
 }
 
 .news-signup {
-  background-color: #DAD9D3;
+  background-color: #F0EFE9;
   padding-bottom: 10px;
   margin-top: 10px;
   position: relative;
@@ -1065,6 +1105,7 @@ header .container .main-menu .btn-login {
   position: absolute;
   top: 160px;
   right: 0;
+  z-index: 1;
 }
 @media (max-width: 1400px) {
   .news-signup .container img {
@@ -1119,11 +1160,19 @@ header .container .main-menu .btn-login {
   padding-top: 110px;
   padding-bottom: 110px;
   border-bottom: 1px solid rgba(112, 112, 112, 0.4196078431);
+  position: relative;
+  z-index: 0;
 }
 @media (max-width: 992px) {
   .footer {
     display: none;
   }
+}
+.footer .white-lines {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 .footer .container {
   display: flex;

@@ -280,6 +280,20 @@ header{
 
 .showcase{
     background-color: #F0EFE9;
+    position: relative;
+    z-index: 0;
+
+    .white-lines{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        
+        @media(max-width: 992px){
+        display: none;
+        }
+
+    }
 
     .container{
         display: flex;
@@ -498,6 +512,12 @@ header{
     @media (min-width: 768px){
         padding-top: 120px;
         padding-bottom: 120px;
+    }
+
+    @media (min-width: 1200px){
+        padding-top: 100px;
+        margin-bottom: -170px;
+    
 
     }
 
@@ -636,23 +656,32 @@ header{
 }
 
 .our-services{
-    background-color: #DAD9D3;
+    background-color: #F0EFE9;
+    position: relative;
+    z-index: 0;
+
+    .white-lines{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+
+        @media(max-width: 992px){
+            display: none; 
+        }
+    }
 
     .container{
 
         padding-top: 0px;
         padding-bottom: 100px;
 
-        h3{
-            font-family:'DM Sans', sans-serif;
-            font-size: 18px;
-            font-weight: 800;
-            color: #191919;
-            margin-bottom: 20px;
+        .section-title{
+            margin-bottom: -50px;
+
         }
 
-
-        .service-carusell {
+        .services{
             display: grid;
             margin-top: 20px;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -763,10 +792,30 @@ header{
 .why-choose-us{
     position: relative;
     padding-top: 60px;
+    z-index: 0;
 
+    .background-box{
+        height: 340px;
+        width: 890px;
+        background-color: #F0EFE9;
+        position: absolute;
+        right: 0;
+        bottom: 80px;
+        margin-right: 0px;
+        z-index: -1;
 
+        @media(max-width: 1400px){
+            display: none;
+
+        }
+    }
    
     .container{
+
+        @media(min-width: 1400px){
+            margin-bottom: -100px;
+        }
+        
 
     
         .choose-us-grid{
@@ -805,20 +854,7 @@ header{
                 }
             }
 
-            .background-box{
-                height: 340px;
-                width: 790px;
-                background-color: #DAD9D3;
-                position: relative;
-                right: 90px;
-                bottom: 240px;
-                margin-right: -300px;
-
-                @media(max-width: 1400px){
-                    display: none;
-
-                }
-            }
+            
 
 
 
@@ -1179,6 +1215,10 @@ header{
 
     padding-top: 100px;
     margin-bottom: 80px;
+
+    @media(max-width: 992px){
+        padding-top: 50px;
+    }
     
 
 
@@ -1342,7 +1382,7 @@ header{
 
 .news-signup{
 
-    background-color: #DAD9D3;
+    background-color: #F0EFE9;
     padding-bottom: 10px;
     margin-top: 10px;
     position: relative;
@@ -1353,6 +1393,7 @@ header{
             position: absolute;
             top: 160px;
             right: 0;
+            z-index: 1;
 
             @media(max-width: 1400px){
                 display: none;
@@ -1419,6 +1460,16 @@ header{
     padding-top: 110px;
     padding-bottom: 110px;
     border-bottom: 1px solid #7070706b;
+    position: relative;
+    z-index: 0;
+
+
+    .white-lines{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
 
     .container{
 

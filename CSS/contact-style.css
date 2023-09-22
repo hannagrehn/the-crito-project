@@ -51,6 +51,29 @@ html, body {
   }
 }
 
+.section-title {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .section-title {
+    padding-top: 120px;
+    padding-bottom: 90px;
+    text-align: start;
+  }
+}
+.section-title p {
+  color: #f94d1c;
+  margin-bottom: 5px;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+
 header {
   display: flex;
   background-color: #F0EFE9;
@@ -246,4 +269,175 @@ header .container .main-menu .btn-login {
   font-family: "DM Sans", sans-serif;
   padding-bottom: 8px;
   padding-top: 20px;
+}
+
+.leave-us .container {
+  background-color: #F0EFE9;
+  margin-top: 70px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+.leave-us .container .section-title {
+  text-align: center;
+  margin-bottom: -150px;
+}
+@media (max-width: 992px) {
+  .leave-us .container .section-title {
+    margin-bottom: 10px;
+  }
+  .leave-us .container .section-title h2 {
+    font-size: 32px;
+  }
+}
+.leave-us .container .content {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .leave-us .container .content {
+    padding: 100px;
+  }
+}
+.leave-us .container .content .form {
+  padding-top: 10px;
+}
+.leave-us .container .content .form input {
+  border-radius: 20px;
+  height: 40px;
+  width: 100%;
+  border: none;
+  padding-left: 30px;
+  font-family: "DM Sans", sans-serif;
+}
+.leave-us .container .content .message-form {
+  padding-top: 10px;
+}
+.leave-us .container .content .message-form input {
+  border-radius: 25px;
+  height: 140px;
+  width: 100%;
+  border: none;
+  padding-left: 30px;
+  font-family: "DM Sans", sans-serif;
+}
+.leave-us .container .content .btn-yellow {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 10px;
+  margin-top: 30px;
+}
+
+.map iframe {
+  width: 100%;
+}
+
+.footer {
+  background-color: #0E1021;
+  padding-top: 110px;
+  padding-bottom: 110px;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.4196078431);
+  position: relative;
+  z-index: 0;
+}
+@media (max-width: 992px) {
+  .footer {
+    display: none;
+  }
+}
+.footer .white-lines {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .container .footer-logo {
+  width: 30%;
+}
+.footer .container .footer-logo img {
+  margin-bottom: 20px;
+}
+.footer .container .footer-logo p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6c6c6c;
+}
+@media (max-width: 992px) {
+  .footer .container .footer-logo p {
+    display: none;
+  }
+}
+.footer .container .footer-column {
+  color: #ffffff;
+}
+@media (max-width: 992px) {
+  .footer .container .footer-column {
+    display: none;
+  }
+}
+.footer .container .footer-column ul {
+  list-style-type: none;
+  padding: 0px;
+}
+.footer .container .footer-column ul li {
+  margin-bottom: 20px;
+  color: #6c6c6c;
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer .container .footer-column ul li a {
+  color: #6c6c6c;
+  text-decoration: none;
+}
+.footer .container .footer-column ul li a:hover {
+  color: #DAD9D3;
+}
+.footer .container .footer-column h4 {
+  font-size: 22px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+
+.footer-copyright {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #0E1021;
+}
+@media (max-width: 992px) {
+  .footer-copyright {
+    font-size: 16px;
+    justify-content: center;
+  }
+}
+.footer-copyright .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-copyright .container .copyright {
+  color: #8F9098;
+  font-size: 16px;
+  font-weight: 500;
+}
+@media (max-width: 992px) {
+  .footer-copyright .container .social-media {
+    display: none;
+  }
+}
+.footer-copyright .container .social-media a {
+  margin: 0px 10px;
+}
+.footer-copyright .container .social-media a i {
+  color: #8F9098;
+}
+.footer-copyright .container .social-media a i:hover {
+  color: #F0EFE9;
 }
