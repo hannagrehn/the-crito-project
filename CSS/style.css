@@ -16,6 +16,7 @@ html, body {
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
+  transition: 0.6s;
 }
 .btn-yellow i {
   margin-left: 8px;
@@ -29,7 +30,7 @@ html, body {
 
 .btn-black {
   background-color: #191919;
-  border: 1px solid #191919;
+  border: 2px solid #191919;
   color: #F0EFE9;
   text-decoration: none;
   padding: 15px 25px;
@@ -37,6 +38,7 @@ html, body {
   font-size: 16px;
   border-radius: 25px;
   text-align: center;
+  transition: 0.6s;
 }
 .btn-black i {
   margin-left: 8px;
@@ -44,7 +46,7 @@ html, body {
 }
 .btn-black:hover {
   background-color: #FFFFFF;
-  border: 1px solid #191919;
+  border: 2px solid #191919;
   color: #191919;
 }
 @media (max-width: 768px) {
@@ -62,7 +64,8 @@ html, body {
   padding: 15px 25px;
   font-weight: 600;
   font-size: 16px;
-  border-radius: 25px;
+  border-radius: 30px;
+  transition: 0.6s;
 }
 .btn-transparent i {
   margin-left: 8px;
@@ -88,6 +91,14 @@ html, body {
   padding-right: 20px;
   margin-left: 180px;
   border: none;
+  transition: 0.8s;
+}
+.btn-arrow:hover {
+  background-color: #ffffff;
+  border: none;
+}
+.btn-arrow:hover i {
+  color: #191919;
 }
 
 .center-content {
@@ -195,6 +206,7 @@ header .container .menu .top-menu .social-media a {
   color: #191919;
   font-size: 1.3rem;
   margin-left: 10px;
+  transition: 0.6s;
 }
 header .container .menu .top-menu .social-media a:hover {
   color: #868686;
@@ -314,25 +326,24 @@ header .container .main-menu .btn-login {
 }
 
 .partners {
-  height: 200px;
+  height: 150px;
   display: grid;
   justify-content: center;
 }
-.partners .container {
+.partners .content {
   padding-top: 40px;
-  padding-bottom: 30px;
-  height: 88px;
+  padding-bottom: 40px;
 }
-.partners .main-partner {
-  align-items: center;
+.partners .content img {
+  margin-bottom: 30px;
 }
 @media (max-width: 768px) {
-  .partners .second-partners {
+  .partners .content .second-partners {
     display: none;
   }
 }
-@media (max-width: 1400px) {
-  .partners .hidden-partners {
+@media (max-width: 1200px) {
+  .partners .content .hidden-partners {
     display: none;
   }
 }
@@ -474,6 +485,7 @@ header .container .main-menu .btn-login {
 .about-comp .container .about-comp-image .img-text h3 span {
   font-size: 16px;
   color: #f94d1c;
+  font-weight: 600;
 }
 .about-comp .container .about-comp-image .img-text p {
   padding-top: 10px;
@@ -515,6 +527,7 @@ header .container .main-menu .btn-login {
   background-color: #ffffff;
   margin-left: 30px;
   margin-right: 10px;
+  transition: 0.6s;
 }
 .about-comp .container .about-comp-text .about-comp-btns .btn-play i {
   font-size: 14px;
@@ -563,64 +576,60 @@ header .container .main-menu .btn-login {
   margin-bottom: -50px;
 }
 .our-services .container .services {
-  display: grid;
   margin-top: 20px;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  gap: 20px;
 }
-.our-services .container .services .service-card {
+.our-services .container .services .card {
   background-color: #ffffff;
-  padding: 40px 25px;
+  padding: 30px 25px;
   margin-bottom: 40px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 0;
+  transition: 0.6s;
 }
-.our-services .container .services .service-card:hover {
+.our-services .container .services .card:hover {
   background-color: #F9D783;
 }
-.our-services .container .services .service-card:hover .btn-arrow {
-  background-color: white;
+.our-services .container .services .card:hover .btn-arrow {
+  background-color: #ffffff;
   border: none;
 }
-.our-services .container .services .service-card:hover .btn-arrow i {
+.our-services .container .services .card:hover .btn-arrow i {
   color: #191919;
 }
-.our-services .container .services .service-card:active {
+.our-services .container .services .card.active {
   background-color: #F9D783;
 }
-.our-services .container .services .service-card:active .btn-arrow {
-  background-color: white;
+.our-services .container .services .card.active .btn-arrow {
+  background-color: #ffffff;
   border: none;
 }
-.our-services .container .services .service-card:active .btn-arrow i {
+.our-services .container .services .card.active .btn-arrow i {
   color: #191919;
 }
-.our-services .container .services .service-card .active {
-  background-color: #F9D783;
-}
-.our-services .container .services .service-card .active .btn-arrow {
-  background-color: white;
-  border: none;
-}
-.our-services .container .services .service-card .active .btn-arrow i {
-  color: #191919;
-}
-.our-services .container .services .service-card span {
+.our-services .container .services .card span {
   display: block;
   border: 1px solid black;
   width: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  margin-top: 10px;
 }
-.our-services .container .services .service-card h3 {
+.our-services .container .services .card h3 {
   font-size: 22px;
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
   margin-bottom: 15px;
 }
-.our-services .container .services .service-card p {
+.our-services .container .services .card p {
   font-size: 16px;
   font-weight: 400;
   margin-bottom: 50px;
 }
-.our-services .container .services .service-card i {
+.our-services .container .services .card i {
   color: #ffffff;
   font-size: 25px;
 }
@@ -629,6 +638,7 @@ header .container .main-menu .btn-login {
 }
 .our-services .container .btn-browse .btn-transparent {
   padding: 16px 40px;
+  border-radius: 40px;
 }
 @media (max-width: 768px) {
   .our-services .container .btn-browse {
@@ -854,7 +864,6 @@ header .container .main-menu .btn-login {
   height: 350px;
   width: 250px;
   gap: 10px;
-  width: 100%;
 }
 .meet-our-team .container .meet-our-team-grid .meet-our-team-card h4 {
   font-family: "DM Sans", sans-serif;
@@ -1016,7 +1025,7 @@ header .container .main-menu .btn-login {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
   margin-left: 5px;
   margin-right: 5px;
@@ -1168,8 +1177,8 @@ header .container .main-menu .btn-login {
 
 .footer {
   background-color: #0E1021;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 100px;
+  padding-bottom: 90px;
   border-bottom: 1px solid rgba(112, 112, 112, 0.4196078431);
   position: relative;
   z-index: 0;
@@ -1201,37 +1210,27 @@ header .container .main-menu .btn-login {
   font-weight: 500;
   color: #6c6c6c;
 }
-@media (max-width: 992px) {
-  .footer .container .footer-logo p {
-    display: none;
-  }
+.footer .container .column {
+  color: #DAD9D3;
 }
-.footer .container .footer-column {
-  color: #ffffff;
-}
-@media (max-width: 992px) {
-  .footer .container .footer-column {
-    display: none;
-  }
-}
-.footer .container .footer-column ul {
-  list-style-type: none;
+.footer .container .column ul {
   padding: 0px;
+  list-style-type: none;
 }
-.footer .container .footer-column ul li {
+.footer .container .column ul li {
   margin-bottom: 20px;
-  color: #6c6c6c;
+  color: #8F9098;
   font-size: 16px;
   font-weight: 500;
 }
-.footer .container .footer-column ul li a {
+.footer .container .column ul li a {
   color: #6c6c6c;
   text-decoration: none;
 }
-.footer .container .footer-column ul li a:hover {
+.footer .container .column ul li a:hover {
   color: #DAD9D3;
 }
-.footer .container .footer-column h4 {
+.footer .container .column h4 {
   font-size: 22px;
   font-family: "DM Sans", sans-serif;
   font-weight: 800;
@@ -1246,13 +1245,11 @@ header .container .main-menu .btn-login {
 @media (max-width: 992px) {
   .footer-copyright {
     font-size: 16px;
-    justify-content: center;
   }
 }
 .footer-copyright .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .footer-copyright .container .copyright {
   color: #8F9098;

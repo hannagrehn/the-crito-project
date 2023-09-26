@@ -14,6 +14,7 @@ html, body {
   font-weight: 600;
   font-size: 16px;
   border-radius: 25px;
+  transition: 0.8s;
 }
 .btn-yellow i {
   margin-left: 8px;
@@ -23,32 +24,6 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
-}
-
-.btn-transparent {
-  background-color: transparent;
-  border: 2px solid #191919;
-  color: #191919;
-  text-decoration: none;
-  padding: 15px 25px;
-  font-weight: 600;
-  font-size: 16px;
-  border-radius: 25px;
-}
-.btn-transparent i {
-  margin-left: 8px;
-  font-size: 0.9em;
-}
-.btn-transparent:hover {
-  background-color: #191919;
-  border: 2px solid #191919;
-  color: #F0EFE9;
-}
-@media (max-width: 768px) {
-  .btn-transparent {
-    display: block;
-    width: 100%;
-  }
 }
 
 .section-title {
@@ -150,6 +125,7 @@ header .container .menu .top-menu .social-media a {
   color: #191919;
   font-size: 1.3rem;
   margin-left: 10px;
+  transition: 0.7s;
 }
 header .container .menu .top-menu .social-media a:hover {
   color: #868686;
@@ -188,6 +164,7 @@ header .container .main-menu .btn-login {
 
 .lets-connect {
   position: relative;
+  z-index: 0;
 }
 .lets-connect .content {
   height: 200px;
@@ -206,6 +183,7 @@ header .container .main-menu .btn-login {
   justify-content: center;
   gap: 10px;
   font-weight: 400;
+  z-index: 2;
 }
 .lets-connect .content .small-text a {
   color: #191919;
@@ -229,6 +207,7 @@ header .container .main-menu .btn-login {
 .lets-connect .content img {
   position: relative;
   bottom: 140px;
+  z-index: 0;
 }
 @media (max-width: 992px) {
   .lets-connect .content img {
@@ -258,8 +237,8 @@ header .container .main-menu .btn-login {
   font-size: 18px;
   color: #ffffff;
   background-color: #191919;
-  padding: 20px 25px;
-  border-radius: 50%;
+  padding: 22px 25px;
+  border-radius: 30px;
   margin-right: 20px;
   margin-top: 20px;
 }
@@ -269,6 +248,12 @@ header .container .main-menu .btn-login {
   font-family: "DM Sans", sans-serif;
   padding-bottom: 8px;
   padding-top: 20px;
+  color: #191919;
+}
+.cards .container .card p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #191919;
 }
 
 .leave-us .container {
@@ -309,8 +294,8 @@ header .container .main-menu .btn-login {
   padding-top: 10px;
 }
 .leave-us .container .content .form input {
-  border-radius: 20px;
-  height: 40px;
+  border-radius: 40px;
+  height: 50px;
   width: 100%;
   border: none;
   padding-left: 30px;
@@ -344,8 +329,8 @@ header .container .main-menu .btn-login {
 
 .footer {
   background-color: #0E1021;
-  padding-top: 110px;
-  padding-bottom: 110px;
+  padding-top: 100px;
+  padding-bottom: 90px;
   border-bottom: 1px solid rgba(112, 112, 112, 0.4196078431);
   position: relative;
   z-index: 0;
@@ -377,37 +362,27 @@ header .container .main-menu .btn-login {
   font-weight: 500;
   color: #6c6c6c;
 }
-@media (max-width: 992px) {
-  .footer .container .footer-logo p {
-    display: none;
-  }
+.footer .container .column {
+  color: #DAD9D3;
 }
-.footer .container .footer-column {
-  color: #ffffff;
-}
-@media (max-width: 992px) {
-  .footer .container .footer-column {
-    display: none;
-  }
-}
-.footer .container .footer-column ul {
+.footer .container .column ul {
   list-style-type: none;
   padding: 0px;
 }
-.footer .container .footer-column ul li {
+.footer .container .column ul li {
   margin-bottom: 20px;
   color: #6c6c6c;
   font-size: 16px;
   font-weight: 500;
 }
-.footer .container .footer-column ul li a {
+.footer .container .column ul li a {
   color: #6c6c6c;
   text-decoration: none;
 }
-.footer .container .footer-column ul li a:hover {
+.footer .container .column ul li a:hover {
   color: #DAD9D3;
 }
-.footer .container .footer-column h4 {
+.footer .container .column h4 {
   font-size: 22px;
   font-family: "DM Sans", sans-serif;
   font-weight: 800;
