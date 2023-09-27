@@ -237,8 +237,8 @@ header .container .main-menu .btn-login {
   font-size: 18px;
   color: #ffffff;
   background-color: #191919;
-  padding: 22px 25px;
-  border-radius: 30px;
+  padding: 23px 25px;
+  border-radius: 50%;
   margin-right: 20px;
   margin-top: 20px;
 }
@@ -360,7 +360,7 @@ header .container .main-menu .btn-login {
 .footer .container .footer-logo p {
   font-size: 16px;
   font-weight: 500;
-  color: #6c6c6c;
+  color: #b8baca;
 }
 .footer .container .column {
   color: #DAD9D3;
@@ -371,16 +371,16 @@ header .container .main-menu .btn-login {
 }
 .footer .container .column ul li {
   margin-bottom: 20px;
-  color: #6c6c6c;
+  color: #b8baca;
   font-size: 16px;
   font-weight: 500;
 }
 .footer .container .column ul li a {
-  color: #6c6c6c;
+  color: #b8baca;
   text-decoration: none;
 }
 .footer .container .column ul li a:hover {
-  color: #DAD9D3;
+  color: #ffffff;
 }
 .footer .container .column h4 {
   font-size: 22px;
@@ -406,7 +406,7 @@ header .container .main-menu .btn-login {
   align-items: center;
 }
 .footer-copyright .container .copyright {
-  color: #8F9098;
+  color: #b8baca;
   font-size: 16px;
   font-weight: 500;
 }
@@ -419,8 +419,8 @@ header .container .main-menu .btn-login {
   margin: 0px 10px;
 }
 .footer-copyright .container .social-media a i {
-  color: #8F9098;
+  color: #b8baca;
 }
 .footer-copyright .container .social-media a i:hover {
-  color: #F0EFE9;
+  color: #ffffff;
 }

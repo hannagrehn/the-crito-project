@@ -400,8 +400,6 @@ header{
 }
 
 .features{
-
-    
     margin-top: -80px;
 
     .container{
@@ -430,16 +428,13 @@ header{
        
 
         .section-title {
-
-            
             justify-content: center;
             align-items: center;
 
             a{
                 margin-top: 30px;
                 display: blocK;
-                text-align: center;
-                
+                text-align: center;            
             }
 
             @media(min-width: 768px){
@@ -447,11 +442,7 @@ header{
                 justify-content: left;
                 padding-bottom: 80px;
                 padding-right: 100px;
-
-
             }
-            
-
         }
 
         .business-advice{
@@ -464,8 +455,6 @@ header{
                 grid-template-columns: 1fr;
             }
             
-            
-
             .card{
                 border: none;
                 padding-top: 30px;
@@ -488,15 +477,12 @@ header{
                     font-weight: 400;
                     color: #191919;
                 }
-
             }
         }
-
     }
 }
 
 .about-comp{
-
     padding-top: 50px;
     padding-bottom: 70px;
 
@@ -514,7 +500,6 @@ header{
         display: flex;
         
         .about-comp-image{
-
             position: relative;
 
             img{
@@ -528,7 +513,6 @@ header{
 
                 }
             }
-           
 
             .img-text{
                 position: relative;
@@ -540,12 +524,10 @@ header{
                     bottom: 210px;
                     left: 55px;
                     box-shadow: -5px 0px 16px 0px #19191955;
-
                 }
 
                 @media (max-width: 1200px){
                     display: none;
-
                 }
 
                 h3{
@@ -553,7 +535,6 @@ header{
                     font-size: 22px;
 
                     span{
-
                         font-size: 16px;
                         color: #f94d1c;
                         font-weight: 600;
@@ -817,7 +798,6 @@ header{
                 .section-title{
                     @media(max-width: 992px){
                         justify-content: center;
-
                     }
                 }
 
@@ -1416,7 +1396,7 @@ header{
             p {
                 font-size: 16px;
                 font-weight: 500;
-                color: #6c6c6c;
+                color: #b8baca;
             }
         }
 
@@ -1429,16 +1409,16 @@ header{
 
                 li{
                     margin-bottom: 20px;
-                    color: #8F9098;
+                    color: #b8baca;
                     font-size: 16px;
                     font-weight: 500;
 
                     a{
-                        color: #6c6c6c;
+                        color: #b8baca;
                         text-decoration: none;
                     
                         &:hover {
-                            color: #DAD9D3;
+                            color: #ffffff;
                         }
                     }
                 }
@@ -1470,7 +1450,7 @@ header{
         justify-content: space-between;
 
         .copyright{
-            color: #8F9098;
+            color: #b8baca;
             font-size: 16px;
             font-weight: 500;
         }
@@ -1484,10 +1464,10 @@ header{
                 margin: 0px 10px;
 
                 i {
-                    color: #8F9098;
+                    color: #b8baca;
 
                     &:hover{
-                        color: #F0EFE9;
+                        color: #ffffff;
                     }
                 }
             }

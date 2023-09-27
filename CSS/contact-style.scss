@@ -25,9 +25,7 @@ html, body {
         background-color: #191919;
         border: 1px solid #191919;
         color: #F0EFE9;
-
     }
-
 }
 
 .section-title{
@@ -41,8 +39,8 @@ html, body {
         padding-bottom: 90px;
         text-align: start;
     }
+
     p{
-        
         color: #f94d1c;
         margin-bottom: 5px;
     }
@@ -60,7 +58,6 @@ header{
     background-color: #F0EFE9;
     padding: 20px;
     
-
     .container{
         display: flex;
         align-items: center;
@@ -188,7 +185,6 @@ header{
 }
 
 .lets-connect{
-
     position: relative;
     z-index: 0;
 
@@ -232,8 +228,7 @@ header{
                 font-weight: 700;
                 font-family: 'DM Sans', sans-serif;
                 font-size: 40px; 
-            }
-            
+            }           
         }
 
         img{
@@ -251,7 +246,6 @@ header{
 .cards{
 
     .container{
-
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 25px;
@@ -262,7 +256,6 @@ header{
         }
 
         .card{
-
             border: 1px solid #19191968;
             padding: 20px;
             border-radius: 0%;
@@ -273,11 +266,10 @@ header{
                 font-size: 18px;
                 color: #ffffff;
                 background-color: #191919;
-                padding: 22px 25px;
-                border-radius: 30px;
+                padding: 23px 25px;
+                border-radius: 50%;
                 margin-right: 20px;
                 margin-top: 20px;
-                
             }
 
             h3{
@@ -293,7 +285,6 @@ header{
                 font-family: 'DM Sans', sans-serif;
                 font-size: 16px;
                 color: #191919;
-
             }
         }
     }
@@ -309,12 +300,10 @@ header{
         margin-bottom: 0px;
         justify-content: center;
 
-
         @media(min-width: 576px){
             margin-bottom: 100px;
         }
         
-
         .section-title{
             text-align: center;
             margin-bottom: -150px;
@@ -324,19 +313,16 @@ header{
                 
                 h2{
                     font-size: 32px;
-                }
-                
+                }              
             }
         }
 
-        .content{
-           
+        .content{          
             display: flex;
             flex-direction: column;
 
             @media(min-width: 992px){
-                padding: 100px;
-                
+                padding: 100px;               
             }
 
             .form{
@@ -367,8 +353,7 @@ header{
                 }
             }
     
-           .btn-yellow{
-                
+           .btn-yellow{               
                 width: 100%;
                 justify-content: center;
                 padding-top: 18px;
@@ -383,12 +368,10 @@ header{
 }
 
 .map{
-    
+
     iframe{
         width: 100%
     }
-
-
 }
 
 .footer{
@@ -427,7 +410,7 @@ header{
             p {   
                 font-size: 16px;
                 font-weight: 500;
-                color: #6c6c6c;
+                color: #b8baca;
             }
         }
 
@@ -440,16 +423,16 @@ header{
 
                 li{
                     margin-bottom: 20px;
-                    color: #6c6c6c;
+                    color: #b8baca;
                     font-size: 16px;
                     font-weight: 500;
 
                     a{
-                        color: #6c6c6c;
+                        color: #b8baca;
                         text-decoration: none;
                     
                         &:hover {
-                            color: #DAD9D3;
+                            color: #ffffff;
                         }
                     }
                 }
@@ -482,7 +465,7 @@ header{
         align-items: center;
 
         .copyright{
-            color: #8F9098;
+            color: #b8baca;
             font-size: 16px;
             font-weight: 500;
         }
@@ -496,10 +479,10 @@ header{
                 margin: 0px 10px;
 
                 i {
-                    color: #8F9098;
+                    color: #b8baca;
 
                     &:hover{
-                        color: #F0EFE9;
+                        color: #ffffff;
                     }
                 }
             }
