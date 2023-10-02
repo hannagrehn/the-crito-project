@@ -19,7 +19,7 @@ html, body {
     font-weight: 600;
     font-size: 16px;
     border-radius: 25px;
-    transition: 0.6s;
+    transition: 0.3s;
 
     i {
         margin-left: 8px;
@@ -45,7 +45,7 @@ html, body {
     font-size: 16px;
     border-radius: 25px;
     text-align: center;
-    transition: 0.6s;
+    transition: 0.3s;
 
     i {
         margin-left: 8px;
@@ -75,7 +75,7 @@ html, body {
     font-weight: 600;
     font-size: 16px;
     border-radius: 30px;
-    transition: 0.6s;
+    transition: 0.3s;
 
     i {
         margin-left: 8px;
@@ -104,7 +104,7 @@ html, body {
     padding-right: 20px;
     margin-left: 180px;
     border: none;
-    transition: 0.8s;
+    transition: 0.4s;
 
     &:hover{
         background-color: #ffffff;
@@ -656,7 +656,7 @@ header{
                 margin-left: 5px;
                 border: none;
                 border-radius: 0;
-                transition: 0.6s;
+                transition: 0.3s;
                 
                 &:hover{
                     background-color: #F9D783;
@@ -839,10 +839,9 @@ header{
 
             @media(max-width:768px){
                 padding-bottom: 60px;
-                
-            }
-        }
-     
+            }                
+        
+    }   
 }
 
 .project-and-case{
@@ -872,8 +871,7 @@ header{
 
                 img{
                     width: 100%;
-                    height: auto;
-                    
+                    height: auto;                  
                 }
 
                 h3{
@@ -895,8 +893,7 @@ header{
                     font-weight: 500;
                     text-decoration: none;
                     color: #191919;
-
-                    
+                
                     &:hover{
                       font-weight: 800;
                     }
@@ -911,13 +908,11 @@ header{
         .btn-business{
             padding-left: 30px;
             padding-right: 30px;
-
         }
 
         .center-content{
             padding-top: 50px;
             padding-bottom: 90px;
-
         } 
     }
 }
@@ -1032,7 +1027,6 @@ header{
 }
 
 .testimonial{
-
     background-color: #F9D783;
     padding-top: 60px;
     padding-bottom: 90px;
@@ -1052,7 +1046,6 @@ header{
                 margin-bottom: 0px;
                 margin-top: 15px;
             }
-
         }
 
         .testimonial-grid{
@@ -1103,7 +1096,6 @@ header{
                         border-radius: 50%;
                     }
                        
-
                     .review-person-details{
 
                         h3{
@@ -1132,7 +1124,6 @@ header{
 }
 
 .article-and-news {
-
     padding-top: 100px;
     margin-bottom: 80px;
 
@@ -1153,7 +1144,6 @@ header{
         .article-news-header{
 
             .top-title{
-
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -1181,7 +1171,6 @@ header{
             .little-title{
                 padding-top: 10px;
             }
-
         }
 
         .article-and-news-grid{
@@ -1292,7 +1281,6 @@ header{
 }
 
 .news-signup{
-
     background-color: #F0EFE9;
     padding-bottom: 10px;
     margin-top: 10px;
@@ -1317,8 +1305,7 @@ header{
             
 
             @media(max-width: 992px){
-                display: block;
-            
+                display: block;         
             }
 
             h2{
