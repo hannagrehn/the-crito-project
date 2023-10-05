@@ -690,7 +690,7 @@ header .container .main-menu .btn-login {
     margin-bottom: -100px;
   }
 }
-.why-choose-us .container img {
+.why-choose-us .container .choose-us-grid img {
   height: 460px;
   width: auto;
   margin-top: 150px;
@@ -700,56 +700,56 @@ header .container .main-menu .btn-login {
   z-index: 1;
 }
 @media (max-width: 1400px) {
-  .why-choose-us .container img {
+  .why-choose-us .container .choose-us-grid img {
     height: 360px;
     width: auto;
     margin-top: 250px;
   }
 }
 @media (max-width: 1200px) {
-  .why-choose-us .container img {
+  .why-choose-us .container .choose-us-grid img {
     display: none;
   }
 }
-.why-choose-us .container .choose-us-content {
+.why-choose-us .container .choose-us-grid .choose-us-content {
   padding-top: 0px;
 }
 @media (max-width: 992px) {
-  .why-choose-us .container .choose-us-content .section-title {
+  .why-choose-us .container .choose-us-grid .choose-us-content .section-title {
     justify-content: center;
   }
 }
 @media (max-width: 1400) {
-  .why-choose-us .container .choose-us-content {
+  .why-choose-us .container .choose-us-grid .choose-us-content {
     justify-content: center;
     text-align: center;
   }
 }
-.why-choose-us .container .choose-us-content .article {
+.why-choose-us .container .choose-us-grid .choose-us-content .article {
   display: flex;
   align-items: center;
   margin-bottom: 40px;
 }
-.why-choose-us .container .choose-us-content .article i {
+.why-choose-us .container .choose-us-grid .choose-us-content .article i {
   padding: 15px;
   border: 1px solid #DAD9D3;
   border-radius: 50px;
   font-size: 22px;
   margin-right: 20px;
 }
-.why-choose-us .container .choose-us-content .article span h4 {
+.why-choose-us .container .choose-us-grid .choose-us-content .article span h4 {
   font-size: 22px;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
 }
-.why-choose-us .container .choose-us-content .article span p {
+.why-choose-us .container .choose-us-grid .choose-us-content .article span p {
   margin: 0;
   color: #868686;
   font-weight: 400;
   font-size: 18px;
 }
 @media (max-width: 768px) {
-  .why-choose-us .container {
+  .why-choose-us .container .choose-us-grid {
     padding-bottom: 60px;
   }
 }
