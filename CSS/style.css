@@ -151,11 +151,6 @@ header .container .menu-bars {
     display: none;
   }
 }
-@media (min-width: 2500px) {
-  header .container {
-    max-width: 2048px;
-  }
-}
 header .container .menu {
   display: none;
   flex: 1;
@@ -206,10 +201,10 @@ header .container .menu .top-menu .social-media a {
   color: #191919;
   font-size: 1.3rem;
   margin-left: 10px;
-  transition: 0.6s;
+  transition: 0.4;
 }
 header .container .menu .top-menu .social-media a:hover {
-  color: #868686;
+  color: #c3bebe;
 }
 header .container .main-menu {
   display: flex;
@@ -223,6 +218,7 @@ header .container .main-menu nav a {
   text-decoration: none;
   margin-right: 35px;
   position: relative;
+  transition: 0.3s;
 }
 header .container .main-menu nav a.active {
   font-weight: 500;
@@ -326,31 +322,27 @@ header .container .main-menu .btn-login {
 }
 
 .partners {
-  height: 150px;
   display: grid;
+  padding-top: 30px;
   justify-content: center;
+  margin-bottom: -30px;
 }
-.partners .content {
-  padding-top: 40px;
-  padding-bottom: 40px;
+.partners img {
+  justify-content: center;
+  height: 65px;
+  padding-left: 15px;
 }
-.partners .content img {
-  margin-bottom: 30px;
-}
-@media (max-width: 768px) {
-  .partners .content .second-partners {
-    display: none;
+@media (min-width: 992px) {
+  .partners {
+    padding-top: 60px;
+    margin-bottom: 0px;
   }
-}
-@media (max-width: 1200px) {
-  .partners .content .hidden-partners {
-    display: none;
+  .partners img {
+    padding-left: 50px;
+    height: 80px;
   }
 }
 
-.features {
-  margin-top: -80px;
-}
 .features .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -368,7 +360,7 @@ header .container .main-menu .btn-login {
 }
 @media (min-width: 992px) {
   .features .container {
-    margin-top: 100px;
+    margin-top: 50px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -381,6 +373,7 @@ header .container .main-menu .btn-login {
 .features .container .section-title {
   justify-content: center;
   align-items: center;
+  padding-bottom: 20px;
 }
 .features .container .section-title a {
   margin-top: 30px;
@@ -391,19 +384,25 @@ header .container .main-menu .btn-login {
   .features .container .section-title {
     display: grid;
     justify-content: left;
-    padding-bottom: 80px;
-    padding-right: 100px;
+    padding-bottom: 180px;
+    padding-right: 80px;
+    padding-left: 50px;
+    margin-top: -40px;
   }
 }
 .features .container .business-advice {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding-top: 60px;
+  padding-top: 80px;
   padding-left: 20px;
+  padding-right: 30px;
+  padding-bottom: 70px;
 }
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .features .container .business-advice {
     grid-template-columns: 1fr;
+    padding-top: 0px;
+    margin-bottom: -110px;
   }
 }
 .features .container .business-advice .card {
@@ -434,12 +433,13 @@ header .container .main-menu .btn-login {
 @media (min-width: 768px) {
   .about-comp {
     padding-top: 120px;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
   }
 }
 @media (min-width: 1200px) {
   .about-comp {
     padding-top: 100px;
+    padding-bottom: 10px;
     margin-bottom: -170px;
   }
 }
@@ -449,14 +449,31 @@ header .container .main-menu .btn-login {
 .about-comp .container .about-comp-image {
   position: relative;
 }
-.about-comp .container .about-comp-image img {
+.about-comp .container .about-comp-image .samantha {
   position: relative;
   height: 550px;
   margin-right: 150px;
   left: 140px;
 }
 @media (max-width: 1200px) {
-  .about-comp .container .about-comp-image img {
+  .about-comp .container .about-comp-image .samantha {
+    display: none;
+  }
+}
+.about-comp .container .about-comp-image .wavy-lines {
+  position: relative;
+  z-index: 3;
+  bottom: 650px;
+  left: 110px;
+}
+.about-comp .container .about-comp-image .wavy-lines .bg-lines {
+  position: relative;
+  top: 0px;
+  height: 90px;
+  width: auto;
+}
+@media (max-width: 1200px) {
+  .about-comp .container .about-comp-image .wavy-lines {
     display: none;
   }
 }
@@ -470,7 +487,7 @@ header .container .main-menu .btn-login {
     background-color: #BEEBFF;
     bottom: 210px;
     left: 55px;
-    box-shadow: -5px 0px 16px 0px rgba(25, 25, 25, 0.3333333333);
+    box-shadow: -6px 0px 16px 0px rgba(25, 25, 25, 0.3333333333);
   }
 }
 @media (max-width: 1200px) {
@@ -495,7 +512,7 @@ header .container .main-menu .btn-login {
   padding-left: 110px;
   max-width: 100%;
 }
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .about-comp .container .about-comp-text {
     text-align: center;
     padding-left: 0px;
@@ -572,8 +589,10 @@ header .container .main-menu .btn-login {
   padding-top: 0px;
   padding-bottom: 100px;
 }
-.our-services .container .section-title {
-  margin-bottom: -50px;
+@media (min-width: 767px) {
+  .our-services .container .section-title {
+    margin-bottom: -50px;
+  }
 }
 .our-services .container .services {
   margin-top: 20px;

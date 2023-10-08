@@ -164,11 +164,7 @@ header{
             @media (min-width: 992px ) {
                 display: none;
             }
-        }
-
-        @media (min-width: 2500px) {
-            max-width: 2048px;
-        }
+        }      
 
         .menu{
             display: none;
@@ -219,14 +215,14 @@ header{
 
                 .social-media{
                     
-                    a {
+                    a{
                         color: #191919;
                         font-size: 1.3rem;
                         margin-left: 10px;
-                        transition: 0.6s;
+                        transition: 0.4;
 
                         &:hover{
-                            color: #868686;
+                            color: #c3bebe;
                         }
                     }
                 }                
@@ -247,6 +243,7 @@ header{
                     text-decoration: none;
                     margin-right: 35px;
                     position: relative;
+                    transition: 0.3s;
 
                     &.active {
                         font-weight: 500;
@@ -263,6 +260,7 @@ header{
                         left: 50%;
                         bottom: -3px;
                         transform: translate((calc(50% - 15px)));
+                        
                     }                 
                 }
             }
@@ -372,35 +370,33 @@ header{
 
 }
 
-.partners{
-    height: 150px;
+.partners{ 
     display: grid;
-    justify-content: center;
+    padding-top: 30px;
+    justify-content: center; 
+    margin-bottom: -30px;
 
-    .content{
-        padding-top: 40px;
-        padding-bottom: 40px;
+    img{
+        justify-content: center;
+        height: 65px;
+        padding-left: 15px;
+        
+    }
+
+    
+    @media(min-width: 992px){
+
+        padding-top: 60px;
+        margin-bottom: 0px;
 
         img{
-            margin-bottom: 30px;
-        }
-
-        .second-partners{
-            @media(max-width: 768px){
-            display: none;
-            }
-        }
-
-        .hidden-partners{
-            @media(max-width: 1200px){
-            display: none;
-            }
+            padding-left: 50px;
+            height: 80px;
         }
     }
 }
 
 .features{
-    margin-top: -80px;
 
     .container{
         display: grid;
@@ -417,7 +413,7 @@ header{
         }
 
         @media(min-width: 992px){
-            margin-top: 100px;
+            margin-top: 50px;
             padding-left: 40px;
             padding-right: 40px;
         }
@@ -430,6 +426,7 @@ header{
         .section-title {
             justify-content: center;
             align-items: center;
+            padding-bottom: 20px;
 
             a{
                 margin-top: 30px;
@@ -440,19 +437,25 @@ header{
             @media(min-width: 768px){
                 display: grid;
                 justify-content: left;
-                padding-bottom: 80px;
-                padding-right: 100px;
+                padding-bottom: 180px;
+                padding-right: 80px;
+                padding-left: 50px;
+                margin-top: -40px;
             }
         }
 
         .business-advice{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            padding-top: 60px;
+            padding-top: 80px;
             padding-left: 20px;
+            padding-right: 30px;
+            padding-bottom: 70px;
 
-            @media(max-width: 576px){
+            @media(max-width: 992px){
                 grid-template-columns: 1fr;
+                padding-top: 0px;
+                margin-bottom: -110px;
             }
             
             .card{
@@ -488,11 +491,12 @@ header{
 
     @media (min-width: 768px){
         padding-top: 120px;
-        padding-bottom: 120px;
+        padding-bottom: 80px;
     }
 
     @media (min-width: 1200px){
         padding-top: 100px;
+        padding-bottom: 10px;
         margin-bottom: -170px;
     }
 
@@ -502,7 +506,7 @@ header{
         .about-comp-image{
             position: relative;
 
-            img{
+            .samantha{
                 position: relative;
                 height: 550px;
                 margin-right: 150px;
@@ -511,6 +515,24 @@ header{
                 @media (max-width: 1200px){
                     display: none;
 
+                }
+            }
+    
+            .wavy-lines{
+                position: relative;
+                z-index: 3;
+                bottom: 650px;
+                left: 110px;
+
+                .bg-lines{
+                    position: relative;
+                    top: 0px;
+                    height: 90px;
+                    width: auto;
+                }         
+
+                @media(max-width: 1200px){
+                    display: none;
                 }
             }
 
@@ -523,7 +545,7 @@ header{
                     background-color: #BEEBFF;
                     bottom: 210px;
                     left: 55px;
-                    box-shadow: -5px 0px 16px 0px #19191955;
+                    box-shadow: -6px 0px 16px 0px #19191955;
                 }
 
                 @media (max-width: 1200px){
@@ -553,7 +575,7 @@ header{
             padding-left: 110px;
             max-width: 100%;
 
-            @media (max-width: 992px){
+            @media (max-width: 1200px){
                 text-align: center;
                 padding-left: 0px;
             }
@@ -638,7 +660,10 @@ header{
         padding-bottom: 100px;
 
         .section-title{
-            margin-bottom: -50px;
+
+            @media(min-width: 767px){
+                 margin-bottom: -50px;
+            }          
         }
 
         .services{
